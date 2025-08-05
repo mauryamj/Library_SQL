@@ -30,5 +30,5 @@ queries       implemeneted and manupalated the data
 3. Run `insert_data.sql` to add sample data
 4. Run queries from `queries.sql` in pgAdmin / Workbench
 
-##build by
+## build by
 [Abhishek Maurya]
