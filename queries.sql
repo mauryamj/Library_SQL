@@ -1,0 +1,3 @@
+SELECT m.name,b.title,l.loan_date,l.due_date FROM members m join loans l on m.member_id = l.member_id join books b on l.book_id = b.book_id WHERE m.name = 'mm';
+select m.name,SUM(r.fine) AS total_fine from members m JOIN loans l ON m.member_id = l.member_id JOIN returns r ON l.loan_id = r.loan_id GROUP BY m.name;
+SELECT b.title , m.name,l.due_date,r.return_date,r.fine FROM loans l JOIN returns r ON l.loan_id = r.loan_id JOIN books b ON l.book_id = b.book_id JOIN members m ON l.member_id = m.member_id WHERE r.return_date > l.due_date;
